@@ -17,8 +17,12 @@ function addRow(){
 
 function readData(){
     let table = document.getElementById("varTable")
+    let store = document.querySelector(".active").id
     let rowLength = table.rows.length
     let varList = []
+    let stores = ["https://checkout.funko.com/cart/","https://funkoeurope.com/cart/","https://toytokyo.com/cart/"]
+    console.log("Hello")
+    console.log(store)
 
     for(let i=1; i < rowLength; i++){
         let cells = table.rows.item(i).cells
@@ -35,7 +39,8 @@ function readData(){
             
         }
     }
-    let checkout = "https://checkout.funko.com/cart/"
+
+    let checkout = stores[store]
     for(let x = 0; x<varList.length; x++){
         checkout+=varList[x]+','
     }
