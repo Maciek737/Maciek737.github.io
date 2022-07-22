@@ -20,7 +20,7 @@ function readData(){
     let store = document.querySelector(".active").id
     let rowLength = table.rows.length
     let varList = []
-    let stores = ["https://checkout.funko.com/cart/","https://funkoeurope.com/cart/","https://toytokyo.com/cart/"]
+    let stores = ["https://checkout.funko.com/cart/","https://funkoeurope.com/cart/","https://creations.mattel.com/cart/","https://toytokyo.com/cart/"]
     console.log("Hello")
     console.log(store)
 
